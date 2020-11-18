@@ -8,9 +8,9 @@
                      waveindustries.net       
                   
                               MMXI-MMXX 
-                      
                        
-        -->   
+                       
+        -->    
 
   
   
@@ -55,13 +55,6 @@
         <meta name="image:SpiderWebRight" content="">
         <meta name="image:backgroundtop" content="" >
         <meta name="image:Logominicenter" content="">
-        <meta name="select:Max Columns" content="3col" title="3 columns">
-        <meta name="select:Max Columns" content="4col" title="4 columns">
-        <meta name="select:Max Columns" content="5col" title="5 columns">
-        <meta name="select:Max Columns" content="6col" title="6 columns">
-        <meta name="select:Max Columns" content="7col" title="7 columns">
-        <meta name="select:Max Columns" content="8col" title="8 columns">
-        <meta name="select:Max Columns" content="9col" title="9 columns">
          <meta name="select:Max Columns" content="10col" title="10 columns">
         
         <meta name="select:Title Font" content="Montserrat" title="Montserrat">
@@ -249,6 +242,7 @@
        border-top:  1px solid white;
     -webkit-backdrop-filter: blur(3px);
     float: left;
+  
     width: 100%;
     background:rgba(0,0,0,0.5);
     margin-top: 962px;}
@@ -6267,9 +6261,11 @@ Unknown
 <!--
 var tickercontent=new Array();
 
-tickercontent[1]='Apple is still shit 7 years later';
-tickercontent[2]='Rockstar will never port GTA to M1';
-tickercontent[0]='Ok Boomer';
+tickercontent[0]='Wave OS 1.3';
+tickercontent[1]='MMXI-MMXX';
+
+
+
 
 
 
@@ -6541,7 +6537,7 @@ Your browser does not support inline frames or is currently configured not to di
 <a href="https://github.com/waveindustries/waveos/releases/tag/1.1">
          <img alt="Download" src="https://media1.giphy.com/media/JTIy6MKXfdfYDDBHV0/source.gif"
          width=352" height="329">
-<a1><center>wave OS 1.1</center></a1>
+<a1><center>wave OS 1.2</center></a1>
 <a2>This is a website theme for tumblr. It is made for file retention across hardware intended to replace traditional operating system file explorers.</a2>
     <center><div id="download" class="download"><href="https://github.com/waveindustries/waveos/releases/tag/1.1/">Download</div></center>
 </div>
