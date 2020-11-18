@@ -43,13 +43,6 @@
         <meta name="image:SpiderWebRight" content="">
         <meta name="image:backgroundtop" content="" >
         <meta name="image:Logominicenter" content="">
-        <meta name="select:Max Columns" content="3col" title="3 columns">
-        <meta name="select:Max Columns" content="4col" title="4 columns">
-        <meta name="select:Max Columns" content="5col" title="5 columns">
-        <meta name="select:Max Columns" content="6col" title="6 columns">
-        <meta name="select:Max Columns" content="7col" title="7 columns">
-        <meta name="select:Max Columns" content="8col" title="8 columns">
-        <meta name="select:Max Columns" content="9col" title="9 columns">
          <meta name="select:Max Columns" content="10col" title="10 columns">
         
         <meta name="select:Title Font" content="Montserrat" title="Montserrat">
