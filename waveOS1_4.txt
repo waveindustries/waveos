@@ -238,11 +238,11 @@
         .main { 
             float: left; width:100%;  padding-left: 20px;
     margin-left: -10px; 
-       backdrop-filter: blur(3px);
+       backdrop-filter: blur(0px);
            border-top: solid 1px rgba(255,255,255,0.5);
 
-    box-shadow: 0 10px 65px 0px #000;
-    -webkit-backdrop-filter: blur(3px);
+ 
+    -webkit-backdrop-filter: blur(0px);
     float: left;
   
     width: 100%;
@@ -821,11 +821,12 @@ animation: movingbackground 5s ease infinite;
 			margin-right: 16px;
 			overflow: hidden;
 			margin-bottom:15px;
+			background:black;
 			{block:IfRoundedCorners}border-radius: 15px;{/block:IfRoundedCorners}
 			
 			transition:all ease-out 1s;
 			transform:scale .0500ms;
-			    box-shadow: 0px 20px 65px 0px #000;
+			   
 			
         }
         
@@ -1068,13 +1069,12 @@ font-family: Spartan;
          
         width: 100%;  
         height: 52px;
-        backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+        
         overflow: auto; 
         position: fixed;
         z-index: 99;
         margin-top: -16px;
-        display:flex; 
+        display:none; 
         animation: fadeIn 7s;
             background: url('{image:gradienttopbar}'); 
             z-index:99;
@@ -1144,9 +1144,9 @@ font-family: Spartan;
 .icon-bar-box-shadow {
     width: 100%;
     margin-top: -16px;
-    background: linear-gradient(180deg, #000,#fff, #000, #000, #000, #fff, #000, #000,#000,#fff,#000,#000,#000);
+    background: transparent;
     background-size: 1400% 1400%;
-
+    display:none;
     -webkit-animation: x 5s ease infinite;
     -moz-animation: x 5s ease infinite;
     animation: x 5s ease infinite;
@@ -3848,13 +3848,23 @@ background-position: center;
 }
 
 @media screen and (min-width:750px) {
-.main {margin-left:-10px;
+.main {margin-left:-10px;  backdrop-filter: blur(3px);
+           border-top: solid 1px rgba(255,255,255,0.5);
+
+    box-shadow: 0 10px 65px 0px #000;
+    -webkit-backdrop-filter: blur(3px);
     }
-    
+     .post { box-shadow: 0px 20px 65px 0px #000; background:transparent;}
     .icon-bar2 {display:none; } .icon-bar-mask {display:none;  } 
    .minibox {display:none; }
    .m_icon {display:none; }
-   
+    .icon-bar {  
+        display:flex; 
+       backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);}
+    .icon-bar-box-shadow {  background: linear-gradient(180deg, #000,#fff, #000, #000, #000, #fff, #000, #000,#000,#fff,#000,#000,#000);
+    background-size: 1400% 1400%;}
+
 }
 
 
@@ -6552,8 +6562,8 @@ Unknown
 <!--
 var tickercontent=new Array();
 
-tickercontent[0]='Apple is shit';
-tickercontent[1]='goo goo gah gah motherfucker';
+tickercontent[0]='wave os 1.4';
+tickercontent[1]='hello, world';
 
 
 
