@@ -2321,7 +2321,7 @@ animation: fadeIn 7s;
             background-color: {color:Header},0.50;
             background-color: {color:Loading},0.50;
             color: silver;
-        
+        display:none;
             {block:IfRoundedCorners}border-radius: 1500px;{/block:IfRoundedCorners}{block:IfHeaderImage}
 			 background: linear-gradient(270deg, #d000ff, #ffd909, #ffba5b, #68ff22, #22ffd0);
     background-size: 1000% 1000%;
