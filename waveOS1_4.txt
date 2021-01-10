@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--          
+        <!--           
            
-                RAGE AGAINST THE MACHINE     
-                            ioxwave.com     
+                RAGE AGAINST THE MACHINE      
+                            ioxwave.com       
                      waveindustries.net       
-                  
-                              MMXI-MMXX 
+                   
+                              MMXI-MMXX     
                        
                        
         -->    
@@ -90,13 +90,13 @@
          <meta name="color:Posts" content="#000000">
          <meta name="color:PostsHover" content="#000000">
         <meta name="color:Monday" content="#000000">
-        
         <meta name="color:Tuesday" content="#000000">
         <meta name="color:Wednesday" content="#000000">
         <meta name="color:Thursday" content="#000000">
         <meta name="color:Friday" content="#000000">
         <meta name="color:Saturday" content="#000000">
         <meta name="color:Sunday" content="#000000">
+          <meta name="image:MusicIcon" content="">
         <meta name="color:Sidebar Text" content="#f6f6f6">
         <meta name="color:Header" content="#222222">
         <meta name="color:Header Link Bar" content="#111111">
@@ -239,7 +239,9 @@
             float: left; width:100%;  padding-left: 20px;
     margin-left: -10px; 
        backdrop-filter: blur(3px);
-       border-top:  1px solid white;
+           border-top: solid 1px rgba(255,255,255,0.5);
+
+    box-shadow: 0 10px 65px 0px #000;
     -webkit-backdrop-filter: blur(3px);
     float: left;
   
@@ -285,16 +287,18 @@
             
         }
         
+        .padding {height:115px; }
+        
+       .specialitem { background:rgba(0,0,0,0.5); border-radius:15px; width:300px;  border:1px solid white; height:300px;}
        
-       
-       .Time_Widget { background-image: url('{image:backgroundtop}');    
+       .Time_Widget {    
         z-index:99;  top:0; position:absolute; max-width:360px;
-        margin-top:64px; margin-right:10px;  display:none;
+        margin-top:120px; margin-right:10px; display:none;
     border:1px solid white; box-shadow: 4px 4px 10px;
-    backdrop-filter: blur(10px);     opacity: 0%;
+    backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
             transition: ease-in-out 3s; font-family:Anton; color:white;
-            padding-top:14px;padding-left:10px;padding-right:10px;padding-bottom:10px; width:100%; background-color: rgba(0,0,0,0.0); right:0; border-radius:15px; height:310px;
+            padding-top:14px;padding-left:10px;padding-right:10px;padding-bottom:10px; width:100%; background-color: rgba(0,0,0,0.0); right:0; border-radius:15px; height:550px;
                 text-shadow: 2px 2px 2px #000; text-align:right; font-size:25px; letter-spacing:0.6px; 
         }
                .Console { background-image: url('{image:console}');    
@@ -309,14 +313,14 @@
                 text-shadow: 2px 2px 2px #000; text-align:right; font-size:25px; letter-spacing:0.6px; 
         }
         
-          .Time_Widget:hover { background-image: url('{image:backgroundtop}');    
+          .Time_Widget:hover {   
         z-index:99;  top:0; position:absolute; max-width:360px;
-        margin-top:64px; margin-right:10px;  
+        margin-top:120px; margin-right:10px;  
     border:1px solid white; box-shadow: 4px 4px 10px;
     backdrop-filter: blur(10px);     opacity: 100%;
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
             transition: ease-in-out 3s; font-family:Anton; color:white;
-            padding-top:14px;padding-left:10px;padding-right:10px;padding-bottom:10px; width:100%; background-color: rgba(0,0,0,0.0); right:0; border-radius:15px; height:310px;
+            padding-top:14px;padding-left:10px;padding-right:10px;padding-bottom:10px; width:100%; background-color: rgba(0,0,0,0.0); right:0; border-radius:15px; height:250px;
                 text-shadow: 2px 2px 2px #000; text-align:right; font-size:25px; letter-spacing:0.6px; 
         }
          .Console:hover { background-image: url('{image:backgroundtop}');    
@@ -362,12 +366,38 @@
         }
         
         .Cyber_Punk { background-image: url('{image:backgroundtop}');    
-        z-index:99;  top:0; position:absolute; max-width:340px;filter: grayscale(1);
-        margin-top:256px; margin-right:10px; 
-            transition: ease-in-out 3s; font-family:Spartan; color:white;
-            padding-top:22px;padding-left:10px;padding-right:10px;padding-bottom:10px; width:100%; background-color: rgba(0,0,0,0.0); right:0; border-radius:15px;
-                text-shadow: 2px 2px 2px #000; text-align:right; font-size:25px; letter-spacing:0.6px; background-color:transparent !important;
+         z-index: 99;
+    top: 0;
+    position: absolute;
+    margin-top: 100px;
+    max-width: 290px;
+   
+    background-size: auto;
+    margin-top: 100px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    transition: ease-in-out 3s;
+    font-family: Spartan;
+    color: white;
+    padding-top: 22px;
+    padding-left: -20px;
+    padding-right: 40px;
+    padding-bottom: 200px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.0);
+    right: 0;
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px #000;
+    text-align: right;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    background-color: transparent !important;
         }
+        
+        
+        
+        
+        
         
         
         
@@ -564,7 +594,7 @@ max-height:100%;
         
         {
                
-                min-width:300px;
+                min-width:298px;
                 min-height:500px;
                 width:100%;
                 padding-right: -20px;
@@ -581,7 +611,7 @@ max-height:100%;
         
         {
                
-                min-width:300px;
+                min-width:298px;
                 min-height:500px;
                 width:100%;
                 padding-right: -20px;
@@ -780,12 +810,13 @@ animation: movingbackground 5s ease infinite;
 }
         
         .post {
-            background-color: rgba({RGBcolor:Posts},0.4);
-			min-width: 300px;
+             
+			min-width: 298px;
 			max-width: 460px;
-			width:300px;
+			width:298px;
 			float: left; {text:Post Opacity});{/block:IfPostOpacity}
-		   
+		        border-left: solid 1px rgba(255,255,255,0.1);
+		            border-right: solid 1px rgba(255,255,255,0.1);
 		    border-bottom: solid 1px rgba(255,255,255,0.1);
 			margin-right: 16px;
 			overflow: hidden;
@@ -794,7 +825,7 @@ animation: movingbackground 5s ease infinite;
 			
 			transition:all ease-out 1s;
 			transform:scale .0500ms;
-			
+			    box-shadow: 0px 20px 65px 0px #000;
 			
         }
         
@@ -803,7 +834,7 @@ animation: movingbackground 5s ease infinite;
             border-radius: 15px;
 			font-size: 13px;
 			line-height: 140%;
-			width: 300px;transition:all ease-out 2s;
+			width: 298px;transition:all ease-out 2s;
 			text-align:center;
 			color:#fff;
 		    letter-spacing: 0.6px;
@@ -813,7 +844,7 @@ animation: movingbackground 5s ease infinite;
         .post-section:hover { background: linear-gradient(to right, #3EFEC3, #3EEFFE, #3EA9FE,#EA3EFE,#593EFE,#3EFEC3);
             -webkit-background-clip: text;
             background-clip: text;
-            color: transparent;
+            color: transparent;width: 298px;
                 letter-spacing: 0.6px;
             animation: rainbow_animation 4s ease-in-out infinite;
             background-size: 1000% 100%;
@@ -826,9 +857,9 @@ animation: movingbackground 5s ease infinite;
         
         .post:hover {
             background-color: black;
-            min-width: 300px;
+            min-width: 298px;
 			max-width: 460px;
-			width:300px;
+			width:298px;
 			position: relative;
 			float: left; {text:Post Opacity});{/block:IfPostOpacity}
 			box-shadow: 0px 0px 1px 1px #FFFFFF; 
@@ -895,7 +926,7 @@ font-family: Spartan;
             font-size: 20px;
             display: table-caption;
             border-radius: 15px;
-            width: 300px;
+            width: 298px;
             padding-left: 10px;
             padding-right: 10px;
             width: 280px;
@@ -923,7 +954,7 @@ font-family: Spartan;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
             text-align:center;
-            color:#8fff;
+            color:#fff; opacity:70%;
             font-family:Spartan;
                 letter-spacing: 0.6px;
             transition:all ease-out 2s;
@@ -1007,9 +1038,9 @@ font-family: Spartan;
         }
         
         .post-section img {
-            max-width: 300px;
-            min-width:300px;
-            width:300px;
+            max-width: 298px;
+            min-width:298px;
+            width:298px;
             height: auto;
        
             
@@ -1019,9 +1050,9 @@ font-family: Spartan;
         //TOP BAR//
         
         .index-page .photo-post-photo {
-			max-width: 300px;
-			min-width:300px;
-			width:300px;
+			max-width: 298px;
+			min-width:298px;
+			width:298px;
 			width: 100%;
 			height: 100%;
 			display: block;
@@ -1049,7 +1080,7 @@ font-family: Spartan;
             z-index:99;
         line-height: 0%;
           box-shadow: 0 4px 10px -6px #FFFFFF;
-        transition:ease-in-out 3s; box-shadow: 0px 0px 1px 1px #FFFFFF;
+        transition:ease-in-out 3s; 
         
         
 }
@@ -1113,7 +1144,7 @@ font-family: Spartan;
 .icon-bar-box-shadow {
     width: 100%;
     margin-top: -16px;
-    background: linear-gradient(180deg, #ffab00, #00fdff, #f5d46b, #fbdede, #ffb51d, #1223aa, #b625e1);
+    background: linear-gradient(180deg, #000,#fff, #000, #000, #000, #fff, #000, #000,#000,#fff,#000,#000,#000);
     background-size: 1400% 1400%;
 
     -webkit-animation: x 5s ease infinite;
@@ -1214,14 +1245,14 @@ opacity:40%;
  .icon-bar2 a{
                font-family: helvetica; 
     width: 100%;
-    width: 480px;
-    margin-top: -81px;
+    width: 208px;
+    margin-top: -78px;
     text-align: center;
     display: block;
     height: 100%;
     background: center center;
     height: 208px;
-    transform: scale(0.25);
+    transform: scale(0.19);
             background: url('{image:Logominicenter}'); 
             font-size:15px;
             transition: all 0.3s ease;
@@ -2123,9 +2154,9 @@ animation: fadeIn 7s;
 			display: block;
             
             border-radius:15px;
-            height:300px;
-            min-width: 300px;
-            width:300px;
+            height:298px;
+            min-width: 298px;
+            width:298px;
             
         }
       
@@ -2135,8 +2166,8 @@ animation: fadeIn 7s;
                 border-bottom: solid 1px rgba(255,255,255,0.1);
         
 
-            min-width: 300px;
-            width:300px;
+            min-width: 298px;
+            width:298px;
             
         }
         
@@ -2290,6 +2321,7 @@ animation: fadeIn 7s;
             background-color: {color:Header},0.50;
             background-color: {color:Loading},0.50;
             color: silver;
+        
             {block:IfRoundedCorners}border-radius: 1500px;{/block:IfRoundedCorners}{block:IfHeaderImage}
 			 background: linear-gradient(270deg, #d000ff, #ffd909, #ffba5b, #68ff22, #22ffd0);
     background-size: 1000% 1000%;
@@ -2387,7 +2419,7 @@ animation: fadeIn 7s;
             background-color: rgba({RGBcolor:Sidebar},0.3);
             color: {color:Sidebar Text};
             position: fixed;
-            
+            display:none;
             right:0;
             z-index: 9; 
             padding:15px;
@@ -2574,7 +2606,7 @@ animation: fadeIn 7s;
     z-index: 9;
     background: url('{image:DockBackground}');
     position: relative;
-    box-shadow: 0px 0px 3px 1px #000;
+        box-shadow: 0px 60px 60px 20px #000;
     height: 51px;
     animation: fadeIn 7s;
     transition: all 1s ease-out;
@@ -2690,8 +2722,8 @@ animation: fadeIn 7s;
 .box {margin-left:10px; margin-right:10px; display:block; margin:0;}
 
 .icon_center1 { display:block; padding-top:10px;
-margin-right:200px; 
-position:fixed;padding-left: 10px;
+margin-right:200px; width:200px;
+position:fixed;padding-left: 66px;
 font-family: Spartan;
     font-size:20px;
 }
@@ -3446,7 +3478,7 @@ border-radius: 0.2em;
         
         .messageoftheday {height:40px; width:320px; font-family:helvetica; font-size:24px; background:lavender; border-radius:150px; margin-left:100px; }
         
-            .msg {height:auto; width:320px; font-family:helvetica; font-size:24px; background:black; border-radius:150px;padding-left:30px; padding-top:10px; margin-top:380px; margin-left: -35px; padding-top:10px;padding-bottom:10px; padding-right:20px;
+            .msg {height:auto; width:320px; font-family:helvetica; font-size:24px; background:black; border-radius:150px;padding-left:10px; padding-top:10px; margin-top:380px; margin-left: -25px; padding-top:10px;padding-bottom:10px; padding-right:20px;
                 
             }
 
@@ -3783,9 +3815,10 @@ background-position: center;
     margin-bottom: 165px;
 }
 
- 
+
 .hdockcontainer {display:block;}
 #marquee {display:block;}
+
 
 .tag1 {display:block;}
 .tag2 {display:block;}
@@ -3811,14 +3844,16 @@ background-position: center;
 @media screen and (min-width:750px) {
 .main {margin-left:-10px;
     }
-    
+   
 }
 
 @media screen and (min-width:750px) {
 .main {margin-left:-10px;
     }
     
-    .icon-bar2 {display:none; } .icon-bar-mask {display:none; } 
+    .icon-bar2 {display:none; } .icon-bar-mask {display:none;  } 
+   .minibox {display:none; }
+   .m_icon {display:none; }
    
 }
 
@@ -3831,7 +3866,7 @@ background-position: center;
 
 iPad Pro 
 @media screen and (width:2048px) {
-.post-section:hover  .post iframe, figure img .post-section .post:hover .post .index-page .photo-post-photo {min-width:300px;max-width:320px;margin-right:15px; width: -webkit-fill-available;
+.post-section:hover  .post iframe, figure img .post-section .post:hover .post .index-page .photo-post-photo {min-width:298px;max-width:320px;margin-right:15px; width: -webkit-fill-available;
     }
 }
 
@@ -3839,13 +3874,13 @@ iPad Pro
 MacbookPro2019
 
 @media screen and (width:2560px) {
-.post-section:hover  .post iframe, figure img .post-section .post:hover .post .index-page .photo-post-photo {min-width:300px;max-width:320px;margin-right:15px; width: -webkit-fill-available;
+.post-section:hover  .post iframe, figure img .post-section .post:hover .post .index-page .photo-post-photo {min-width:298px;max-width:320px;margin-right:15px; width: -webkit-fill-available;
     }
 }
 
 //XS MAX//
 @media screen and (width:1242px) {
-.post-section:hover  .post iframe, figure img .post-section .post:hover .post .index-page .photo-post-photo {min-width:300px;max-width:400px;margin-right:15px; width: -webkit-fill-available;
+.post-section:hover  .post iframe, figure img .post-section .post:hover .post .index-page .photo-post-photo {min-width:298px;max-width:400px;margin-right:15px; width: -webkit-fill-available;
     }
 }
 
@@ -4006,6 +4041,207 @@ text-shadow: 2px 2px 2px #000;
 }
 
 
+.minibox {
+    height: 424px;
+    display:block;
+    width: 300px;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 50px;
+    top: 0;
+    display:none;
+    opacity:100%;
+    border-radius: 15px;
+    position: fixed;
+}
+
+	.mini_icon { 
+  
+    font-family:Helvetica;
+    font-weight:bold;
+    font-size:20px;
+  
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+    }
+    
+    /*music*/
+    .m_icon { 
+  font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius:150px;
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+      background-size: cover;
+    height: 52px;
+    width: 52px;
+    display:block;
+    padding-bottom: 5px;
+    position: absolute fixed;
+    position: fixed;
+    top: 0;
+       margin-top: 54px;
+    left: 15px;
+}
+    
+    /*Videos*/
+     .v_icon { 
+   
+ 
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+      margin-top: 54px;
+    left: 79px;
+}
+
+
+
+/*Photos*/
+  .p_icon { 
+   
+
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+      margin-top: 54px;
+    left: 143px;
+}
+
+/*Texts*/ 
+  .t_icon { 
+   
+
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+     margin-top: 54px;
+    left: 207px;
+}
+
+/*Memes*/
+
+  .me_icon { 
+   
+  
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+ 
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+    margin-top: 114px;
+    left: 15px;
+}
+
+
+/*Concepts*/
+
+  .c_icon { 
+   
+
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+    margin-top: 114px;
+    left: 79px;
+}
+
+
+/*Products*/
+
+  .pr_icon { 
+   
+ 
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+    margin-top: 114px;
+    left: 143px;
+}
+
+
+/*Games*/
+
+  .g_icon { 
+   
+
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+  
+    height: 52px;
+    width: 52px;
+    padding-bottom: 5px;
+    position: absolute fixed;
+
+    position: fixed;
+    top: 0;
+    margin-top: 114px;
+    left: 207px;
+}
+
+
+    
+    
+    
 	.toggle2 { width: 100%;
     display: flex;
     justify-content: center;
@@ -4254,6 +4490,7 @@ text-shadow: 2px 2px 2px #000;
     padding-bottom: 14px;
     background-color:black;
     opacity:80%;
+    display:none;
     background-repeat:repeat-x;
     background-size: 600% 600%;
     max-height:52px;
@@ -5558,9 +5795,63 @@ document.addEventListener('click', function (event) {
         <div class="container">
         
         
-        
         <a class="toggle2" href="#WaveMenu"></a>
 </p>
+
+
+<div id="minibox" class="minibox">
+<div id="m_icon" class="m_icon"> 
+        	<a href="https://www.ioxwave.com/search/Music">
+         	<img alt="" src="https://64.media.tumblr.com/bd7c56cae155d384f5c6dc800d4a2ab7/077fea18843021c3-a7/s2048x3072/8993cb3933c155a047557d8837d6a63216d47a17.gif" 
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+         	
+         	
+         	
+<div id="v_icon" class="v_icon">
+   	<a href="https://www.ioxwave.com/search/Videos">
+         	<img alt="" src="https://64.media.tumblr.com/cfd75c7cf673a58487869e07a23e1c40/077fea18843021c3-fc/s2048x3072/e6a921571249af760aed3ecd0e556543a70e15cc.gif""
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+
+
+
+<div id="p_icon" class="p_icon">
+   	<a href="https://www.ioxwave.com/search/Photos">
+         	<img alt="" src="https://64.media.tumblr.com/2b408c52e7c9dcfd6b500d87e7fbf4bf/077fea18843021c3-3e/s2048x3072/922dee052ff4aa606d131fe41ffca4b285cfabef.gif"
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+
+
+<div id="t_icon" class="t_icon">
+   	<a href="https://www.ioxwave.com/search/Texts">
+         	<img alt="" src="https://64.media.tumblr.com/1e2ad3c8eaf8d9ba4b0e3989f042f13e/077fea18843021c3-cf/s2048x3072/88e20ec228797a1ecfa8d38e54bdaf50052fb93c.gif"
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+
+
+
+<div id="me_icon" class="me_icon">
+   	<a href="https://www.ioxwave.com/search/Memes">
+         	<img alt="" src="https://64.media.tumblr.com/0c085b23ef5e294909a3786f5d877478/077fea18843021c3-64/s2048x3072/7370e058718b8a64987a668e9bf66f4a00666267.gif"
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+
+
+
+<div id="c_icon" class="c_icon">
+   	<a href="https://www.ioxwave.com/search/Concepts">
+         	<img alt="" src="https://64.media.tumblr.com/d7b850511f3ec4f82afabc1b5b88434f/077fea18843021c3-af/s2048x3072/becb9a179c640daad3d3ebb01f17c5d686934555.gif"
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+
+
+
+<div id="pr_icon" class="pr_icon">
+   	<a href="https://www.ioxwave.com/search/Products">
+         	<img alt="" src="https://64.media.tumblr.com/d33be150687247e10929be2620ac5c70/077fea18843021c3-d3/s2048x3072/c0c4f4f7bf9180aa410e434997183021daa2487a.gif"
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+
+
+<div id="g_icon" class="g_icon">
+   	<a href="https://www.ioxwave.com/search/Videos">
+         	<img alt="" src="https://64.media.tumblr.com/7bf1e6477632eb68397fc006e2b90c0f/077fea18843021c3-da/s2048x3072/f8555f8531080667982cd91634e38bfc797b46bd.gif"
+         	width=55" height="55" style="border-radius:150px;">️<a></div>
+</div>
 
 <div class="WaveMenu" id="WaveMenu">
 
@@ -5621,9 +5912,9 @@ document.addEventListener('click', function (event) {
 
 
 
-<div class="msg">
+<div class="msg" style="text-align-last: center;">
     
-    the dream engine
+    the paragon
     
 </div></div>
 
@@ -5835,6 +6126,7 @@ document.addEventListener('click', function (event) {
 <img src="https://i.imgur.com/83EQwov.gif?raw=true" draggable="true" ondragstart="dragThis(event)" id="drag6" width="150" height="150" style="
      margin-right:15px; border-radius:15px; margin-left:15px;
 ">
+
 
 
 </div>
@@ -6172,18 +6464,11 @@ document.addEventListener('click', function (event) {
          	</div>
          	
          	<div class="Time_Widget">
-    <div class="icon_center1"> 🏴‍☠️ 2T</div><div class="Apple"><progress value="100" max="100"></meter></div>
-
-<div class="icon_center2"> 🛸 2K</div><div class="car"><progress value="85" max="100"></meter>
+    <div class="icon_center1"> SURVIVE 2020</div><div class="icon_center5"> </div><div class="Cyber_Punk">
+    <div id="padding" class ="padding"></div>
+    <div id="specialitem" class="specialitem">
+    <iframe width="300" height="300" src="https://www.youtube.com/embed/jM2HHp-inug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:15px"></iframe>
 </div>
-
-<div class="icon_center3"> 🌆 1K</div><div class="Living"><progress value="0" max="100"></meter>
-</div>
-
-<div class="icon_center4"> 🎆 '21</div><div class="New_Years"><progress value="65" max="100"></meter>
-</div>
-
-<div class="icon_center5"> 👾 '77</div><div class="Cyber_Punk"><progress value="73" max="100">68%</meter>
 </div>
 </div>
 
@@ -6220,11 +6505,11 @@ Unknown
 
 <div class="icon-bar">
 
-        <a class="twenty" href="https://www.ioxwave.com/about"><i class              ="twenty">IOXWAVE ❤️ ELIZA</i></a> 
-        <a class="forty" href="https://www.waveindustries.net"><i class              ="forty">WAVE INDUSTRIES</i></a> 
-        <a class="sixty" href="https://www.rockstargames.com/V/"><i class            ="sixty">GRAND THEFT AUTO</i></a> 
-        <a class="eighty" href="https://www.rockstargames.com/"><i class             ="eighty">ROCKSTAR GAMES</i></a>
-        <a class="hunid" href="https://www.ioxwave.com/archive"><i          class="hunid">CHRONOLOGY</i></a> 
+        <a class="twenty" href="https://www.ioxwave.com/about"><i class              ="twenty">PARAGON</i></a> 
+        <a class="forty" href="https://www.tumblr.com/theme/41134"><i class              ="forty">WAVE OS</i></a> 
+        <a class="sixty" href="https://www.rockstargames.com"><i class            ="sixty">ROCKSTAR GAMES</i></a> 
+        <a class="eighty" href="https://www.rockstargames.com/V/"><i class             ="eighty">GRAND THEFT AUTO</i></a>
+        <a class="hunid" href="https://www.ioxwave.com/archive"><i          class="hunid">CHRONOS</i></a> 
 </div>
         <div class="icon-bar-box-shadow">
         
@@ -6232,7 +6517,13 @@ Unknown
         
         <div class="icon-bar-mask">  </div>
         <a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('{image:LogoMiniBar}') width=55" height="55">
-        <div class="icon-bar2"><a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('{image:LogoMiniBar}') width=55" height="55"><a></div> 
+        <div class="icon-bar2"><a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('{image:LogoMiniBar}') width=55" height="55"><a>
+            
+           
+            
+            
+            
+        </div> 
         
          	<div>
          	
@@ -6261,8 +6552,8 @@ Unknown
 <!--
 var tickercontent=new Array();
 
-tickercontent[0]='Wave OS 1.3';
-tickercontent[1]='MMXI-MMXX';
+tickercontent[0]='Apple is shit';
+tickercontent[1]='goo goo gah gah motherfucker';
 
 
 
@@ -6476,19 +6767,19 @@ Your browser does not support inline frames or is currently configured not to di
  <div class="hdockcontainerin"></div>
      <div class="hdockcontainerin2">
           <div class="dockh">
-        	<a href="https://www.ioxwave.com/">
+        	<a href="https://www.youtube.com/">
          	<img alt="" src="https://i.pinimg.com/originals/da/20/4d/da204de815863e4aa877d14c91982bd4.gif"
          	width=55" height="55">️<a></div> 
          <div class="dockh2">
-       		<a href="https://github.com/foxlet/bootra1n">
+       		<a href="https://neverthink.tv/">
          	<img alt="Checkra1n" src="https://media.giphy.com/media/3og0IFrHkIglEOg8Ba/giphy.gif"
          	width=55" height="55">️<a></div>
         <div class="dockh3">
-        	<a href="https://youtu.be/dAEQyEUtUR4">
+        	<a href="https://open.spotify.com">
          	<img alt="Pikachu" src="https://vignette.wikia.nocookie.net/pokemon-rumble-fan/images/4/4f/GIF1.gif"
          	width=55" height="55">️️️<a></div>
         <div class="dockh4">
-        	<a href="https://open.spotify.com/">
+        	<a href="https://youtu.be/O2RBdZteqOc">
          	<img alt="Spotify" src="https://discordemoji.com/assets/emoji/1754_Chika_Dance.gif"
          	width=55" height="55">️<a></div>
         <div class="dockh5">
@@ -6537,7 +6828,7 @@ Your browser does not support inline frames or is currently configured not to di
 <a href="https://github.com/waveindustries/waveos/releases/tag/1.1">
          <img alt="Download" src="https://media1.giphy.com/media/JTIy6MKXfdfYDDBHV0/source.gif"
          width=352" height="329">
-<a1><center>wave OS 1.3</center></a1>
+<a1><center>wave OS 1.4</center></a1>
 <a2>This is a website theme for tumblr. It is made for file retention across hardware intended to replace traditional operating system file explorers.</a2>
     <center><div id="download" class="download"><href="https://github.com/waveindustries/waveos/releases/tag/1.1/">Download</div></center>
 </div>
