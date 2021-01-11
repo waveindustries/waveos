@@ -6149,8 +6149,7 @@ document.addEventListener('click', function (event) {
 
 
         <div class="main" <div class="main" style="
-    min-height: 2048px; 
-">>
+    min-height: 2048px;">
 
                 <div id="fig1" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
 
@@ -6626,7 +6625,7 @@ Unknown
 <!--
 var tickercontent=new Array();
 
-tickercontent[0]='wave os 1.4';
+tickercontent[0]='wave os 1.5';
 tickercontent[1]='hello, world';
 
 
@@ -6902,7 +6901,7 @@ Your browser does not support inline frames or is currently configured not to di
 <a href="https://github.com/waveindustries/waveos/releases/tag/1.1">
          <img alt="Download" src="https://media1.giphy.com/media/JTIy6MKXfdfYDDBHV0/source.gif"
          width=352" height="329">
-<a1><center>wave OS 1.4</center></a1>
+<a1><center>wave OS 1.5</center></a1>
 <a2>This is a website theme for tumblr. It is made for file retention across hardware intended to replace traditional operating system file explorers.</a2>
     <center><div id="download" class="download"><href="https://github.com/waveindustries/waveos/releases/tag/1.1/">Download</div></center>
 </div>
