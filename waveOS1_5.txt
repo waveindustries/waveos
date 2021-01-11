@@ -7,7 +7,6 @@
                             ioxwave.com       
                      waveindustries.net       
                    
-                              MMXI-MMXX     
                        
                        
         -->    
@@ -1474,12 +1473,12 @@ opacity:40%;
         
         
         .post-index-meta a {
-              color: #fff; animation:ease-in-out 4s; margin-left: 205px;
-    opacity: 70%; font-size:10px;
+              color: #fff; animation:ease-in-out 4s; margin-left: 190px;
+    opacity: 70%; font-size:8px;
     
         }
         .post-index-meta a:hover {
-            color: white;  animation:ease-in-out 4s; margin-left: 195px; font-size:10px;
+            color: white;  animation:ease-in-out 4s; margin-left: 160px; font-size:8px;
         }
         .note-count {
             font-size: 11px;
@@ -2194,7 +2193,7 @@ animation: fadeIn 7s;
         
         .post figure img {
 			display: block;
-                border-bottom: solid 1px rgba(255,255,255,0.1);
+               
         
 
             min-width: 298px;
@@ -3878,11 +3877,11 @@ background-position: center;
 }
 
 @media screen and (min-width:750px) {
-.main {margin-left:-10px;  backdrop-filter: blur(3px);
+.main {margin-left:-10px;  backdrop-filter: blur(0px);
            border-top: solid 1px rgba(255,255,255,0.5);
 
     box-shadow: 0 10px 65px 0px #000;
-    -webkit-backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(0px);
     }
      .post { box-shadow: 0px 20px 65px 0px #000; background:transparent; 		        border-left: solid 1px rgba(255,255,255,0.1);
      border:solid 1px rgba (255,255,255,0.1);
@@ -3895,7 +3894,7 @@ background-position: center;
         display:flex; 
        backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);}
-    .icon-bar-box-shadow {  background: linear-gradient(180deg, #000,#fff, #000, #000, #000, #fff, #000, #000,#000,#fff,#000,#000,#000);
+    .icon-bar-box-shadow {  
     background-size: 1400% 1400%;}
 
 }
@@ -6149,7 +6148,9 @@ document.addEventListener('click', function (event) {
 
 
 
-        <div class="main">
+        <div class="main" <div class="main" style="
+    min-height: 2048px; 
+">>
 
                 <div id="fig1" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
 
@@ -6429,7 +6430,7 @@ document.addEventListener('click', function (event) {
                 
                 {block:IndexPage}
                 <div class="post-index-meta">
-                    <a href="{Permalink}" class="note-count">{block:IfUseRealDates}{ShortMonth} {DayOfMonth}<span class="year_{Year}"> {Year}</span>{/block:IfUseRealDates}{block:IfNotUseRealDates}{TimeAgo}{/block:IfNotUseRealDates}{block:NoteCount} &bull; {NoteCountWithLabel}{/block:NoteCount}</a>
+                    <a href="{Permalink}" class="note-count">{block:IfUseRealDates}{12Hour}:{Minutes}{AmPm} {ShortMonth} {DayOfMonth}<span class="year_{Year}"> {Year}</span>{/block:IfUseRealDates}{block:IfNotUseRealDates}{TimeAgo}{/block:IfNotUseRealDates}{block:NoteCount} &bull; {NoteCountWithLabel}{/block:NoteCount}</a>
                     
                     
                     {block:Photo}<a style="float:right; text-align: right; margin-right: 8px" class="has-lightbox" data-postid="{PostID}" title="{lang:Zoom}"><i class="fa fa-search-plus"></i></a>{/block:Photo}
@@ -6468,6 +6469,7 @@ document.addEventListener('click', function (event) {
     width: 215px;
     height: 100px;
     display: flex;
+    margin-left:0px;
 ">                    <a href="{ReblogURL}" class="share-item link-tumblr-reblog" target="_blank"><i class="fa fa-retweet"></i> Reblog</a>
                     <a href="https://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item link-facebook-share" target="_blank"><i class="fa fa-facebook-square"></i> Share</a>
                     <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item link-twitter-tweet" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
@@ -6475,15 +6477,33 @@ document.addEventListener('click', function (event) {
                     {block:Video}{block:VideoThumbnail} <a href="https://www.pinterest.com/pin/create/button/?url={URLEncodedPermalink}&amp;media={VideoThumbnailURL}&amp;is_video=true" class="share-item link-pinterest" target="_blank"><i class="fa fa-pinterest"></i> Pin</a>{/block:VideoThumbnail}{/block:Video}
                 </div>
 				
-                <div class="post-meta">
+                <div class="post-meta" style="
+       font-size: 11px;
+    line-height: 13px;
+    color: white;
+    width: 150px;
+    padding-bottom: 25px;
+
+">
                 {block:IfUseRealDates}
-				    <span class="timeago" title="{12Hour}:{Minutes} {AmPm}, {DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}">{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</span>
+				    <span class="timeago"  style="
+    float: left;
+    width: 150px; title="{12Hour}:{Minutes} {AmPm}, {DayOfWeek}, {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}">
+    
+    
+    {12Hour}:{Minutes} {AmPm} 
+    {Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}
+        
+        
+    </span>
                 {/block:IfUseRealDates}
                 {block:IfNotUseRealDates}
-				    <span class="timeago">{TimeAgo}</span>
+				    <span class="timeago"  style="
+    float: left;
+    width: 150px;>{TimeAgo}</span>
                 {/block:IfNotUseRealDates}
 				
-				<span style="float:right; text-align: right">
+<span style="float: center;text-align: right;/* height: 100px; */width: 200px;margin-top: -1px;float: left;margin-left: -30px;">
 				{block:ContentSource}{lang:Source}: <a href="{SourceURL}">{SourceTitle}</a>{/block:ContentSource}
 				{block:RebloggedFrom}{block:ContentSource} &bull; {/block:ContentSource}{lang:Via}: <a href="{ReblogParentURL}">{ReblogParentName}</a>{/block:RebloggedFrom}
 				</span>
