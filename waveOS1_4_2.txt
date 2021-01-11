@@ -231,13 +231,13 @@
         
         
         .wrapper {
-            margin: auto;
+          
                 text-align: -webkit-center;    
 
         }
         .main { 
             float: left; width:100%;  padding-left: 20px;
-    margin-left: -10px; 
+    margin-left: -20px; 
        backdrop-filter: blur(0px);
            border-top: solid 1px rgba(255,255,255,0.5);
 
@@ -815,13 +815,13 @@ animation: movingbackground 5s ease infinite;
 			max-width: 460px;
 			width:298px;
 			float: left; {text:Post Opacity});{/block:IfPostOpacity}
-		        border-left: solid 1px rgba(255,255,255,0.1);
-		            border-right: solid 1px rgba(255,255,255,0.1);
-		    border-bottom: solid 1px rgba(255,255,255,0.1);
+		  border-left: solid 1px rgba(255,255,255,0.0);
+		            border-right: solid 1px rgba(255,255,255,0.0);
+		    border-bottom: solid 1px rgba(255,255,255,0.0);
 			margin-right: 16px;
 			overflow: hidden;
 			margin-bottom:15px;
-			background:black;
+			    background: rgba(0,0,0,0.8);
 			{block:IfRoundedCorners}border-radius: 15px;{/block:IfRoundedCorners}
 			
 			transition:all ease-out 1s;
@@ -1076,7 +1076,7 @@ font-family: Spartan;
         margin-top: -16px;
         display:none; 
         animation: fadeIn 7s;
-            background: url('{image:gradienttopbar}'); 
+            background: url('https://i.imgur.com/VO7zwh4.png'); 
             z-index:99;
         line-height: 0%;
           box-shadow: 0 4px 10px -6px #FFFFFF;
@@ -1239,7 +1239,10 @@ opacity:40%;
         overflow: auto; 
         position: fixed;
         z-index: 99;
-        background:#000000; 
+            background: rgba(0,0,0,0.8);
+                backdrop-filter: blur(6px);
+  
+    -webkit-backdrop-filter: blur(6px);
 }
 
  .icon-bar2 a{
@@ -1253,7 +1256,7 @@ opacity:40%;
     background: center center;
     height: 208px;
     transform: scale(0.19);
-            background: url('{image:Logominicenter}'); 
+            background: url('https://i.imgur.com/USEjCuN.png'); 
             font-size:15px;
             transition: all 0.3s ease;
         
@@ -1433,31 +1436,59 @@ opacity:40%;
             margin-bottom: 10px;
         }
         
-        .post .post-index-meta {
-			width: 230px;
-			font-size: 13px;
-			line-height: 25px;
-			font-weight: normal;
-			padding-left: 10px;
-			padding-right: 10px;
-			display:none;
+         
+        
+        .post-index-meta {
+		    width: 240px;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: normal;
+    padding-left: 20px;
+    color: #fff;
+    height: 0px;
+    z-index: 999;
+    border-radius: 15px;
+    animation: ease-out 4s;
         }
+        
+        
+        .post-index-meta:hover {
+		        font-size: 13px;
+    line-height: 25px;
+    font-weight: normal;
+  
+    margin-left: 30px;
+    color: #fff;
+    background: #000 !important;
+    border-top-left-radius: 0px;
+    padding-top: 5px;
+    border-top-right-radius: 0px;
+    padding-bottom: 5px;
+    width: 238px;
+    height: 20px;
+    margin-top: -30px;
+    animation: ease-in 4s;
+}
+
+        
+        
+        
         .post-index-meta a {
-            color: rgba({RGBcolor:Post Text}, 0.5);
+              color: #fff; animation:ease-in-out 4s; margin-left: 205px;
+    opacity: 70%; font-size:10px;
+    
         }
         .post-index-meta a:hover {
-            color: rgba({RGBcolor:Post Text}, 0.75);
+            color: white;  animation:ease-in-out 4s; margin-left: 195px; font-size:10px;
         }
         .note-count {
             font-size: 11px;
         }
         
         {block:IfNotIndexPhotoCaptions}
-        .photo .post-index-meta {
+        .photo {
             display: none;
         }
-        
-        
         
         
         
@@ -2567,7 +2598,7 @@ animation: fadeIn 7s;
     position: fixed;
     z-index: 9;
     display:none;
-    animation: fadeIn 7s;
+  
     width: 100%;
     
     height: 55px;
@@ -2608,7 +2639,6 @@ animation: fadeIn 7s;
     position: relative;
         box-shadow: 0px 60px 60px 20px #000;
     height: 51px;
-    animation: fadeIn 7s;
     transition: all 1s ease-out;
     cursor: pointer;
     padding-top: 6px;
@@ -2698,7 +2728,7 @@ animation: fadeIn 7s;
    margin-top:-3px;
     color: #f6f6f6;
     position: fixed;
-    z-index: 9;animation: fadeIn 7s;
+    z-index: 9; 
     position:relative;
     width:  535px;
     height: 64px;
@@ -3836,7 +3866,7 @@ background-position: center;
     to   { transform: translate(0, -0px); }    
 }
 
-
+}
 
 
    
@@ -3854,7 +3884,10 @@ background-position: center;
     box-shadow: 0 10px 65px 0px #000;
     -webkit-backdrop-filter: blur(3px);
     }
-     .post { box-shadow: 0px 20px 65px 0px #000; background:transparent;}
+     .post { box-shadow: 0px 20px 65px 0px #000; background:transparent; 		        border-left: solid 1px rgba(255,255,255,0.1);
+     border:solid 1px rgba (255,255,255,0.1);
+		            border-right: solid 1px rgba(255,255,255,0.1);
+		    border-bottom: solid 1px rgba(255,255,255,0.1);}
     .icon-bar2 {display:none; } .icon-bar-mask {display:none;  } 
    .minibox {display:none; }
    .m_icon {display:none; }
@@ -4008,6 +4041,7 @@ text set in the data-text attribute. */
     		.post-meta {
     		    font-size: 11px;
     		    line-height: 13px;
+    		    color:white;
     		}
     		.post p {
     		    font-size: 13px;
@@ -4064,6 +4098,9 @@ text-shadow: 2px 2px 2px #000;
     border-radius: 15px;
     position: fixed;
 }
+
+
+
 
 	.mini_icon { 
   
@@ -4265,7 +4302,7 @@ text-shadow: 2px 2px 2px #000;
     z-index: 1;
     height: 261px;
     width:861px;
-    background-image: url('{image:Logotext}');
+    background-image: url('https://i.imgur.com/3mjlkde.png') ;
     font-style:italic;
     line-height: 300%;
     margin-bottom:1px;
@@ -4294,7 +4331,7 @@ text-shadow: 2px 2px 2px #000;
     z-index: 99;
     height: 125px;
     width:861px;
-    background-image: url('{image:Logotext}');
+    background-image: url('https://i.imgur.com/3mjlkde.png');
     font-style:italic;
     line-height: 300%;
     margin-bottom:1px;
@@ -4332,7 +4369,7 @@ text-shadow: 2px 2px 2px #000;
     z-index: 99;
     height: 125px;
     width:861px;
-    background-image: url('{image:Logotext}');
+    background-image: url('https://i.imgur.com/3mjlkde.png');
     font-style:italic;
     line-height: 300%;
     margin-bottom:1px;
@@ -4445,7 +4482,7 @@ text-shadow: 2px 2px 2px #000;
 .WaveMenu2 { 
     justify-content: center;
     text-shadow: 2px 2px 2px #000;
-    box-shadow: 4px 4px 10px;
+    box-shadow: 4px 4px 10px; 
     align-items: center;
     letter-spacing:2px;
     font-family:Helvetica;
@@ -4454,14 +4491,18 @@ text-shadow: 2px 2px 2px #000;
     border-bottom-left-radius:25px;
     border-bottom-right-radius:25px;
     border-top-right-radius:25px;
-    border-top-left-radius:25px;
+    border-top-left-radius:25px; 
     display:none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-position: center;
     z-index: 99;
     height: 600px;
-   
+ 
+ 
+  animation-duration:0.1s;
+  animation-fill-mode:forwards;
+  animation-timing-function:ease-out;
     border:1px solid #FFFFFF;;
     font-style:italic;
     line-height: 300%;
@@ -4471,7 +4512,7 @@ text-shadow: 2px 2px 2px #000;
     margin-left:-450px !important;
     margin-right:15px;
     margin-top:-800px;
-    transition:ease-in .01ms; 
+    transition:ease-in-out .01ms; 
     
     -webkit-font-smoothing: antialiased;
     -webkit-animation: slide-top 1s cubic-bezier(0.785, 0.135, 0.150, 0.860) reverse forwards;
@@ -6423,8 +6464,11 @@ document.addEventListener('click', function (event) {
                 
                 <article class="post sidecar not-page">
                 
-                <div class="post-meta post-share">
-                    <a href="{ReblogURL}" class="share-item link-tumblr-reblog" target="_blank"><i class="fa fa-retweet"></i> Reblog</a>
+                <div class="post-meta post-share" style="
+    width: 215px;
+    height: 100px;
+    display: flex;
+">                    <a href="{ReblogURL}" class="share-item link-tumblr-reblog" target="_blank"><i class="fa fa-retweet"></i> Reblog</a>
                     <a href="https://facebook.com/sharer.php?u={URLEncodedPermalink}&amp;t={URLEncodedTitle}" class="share-item link-facebook-share" target="_blank"><i class="fa fa-facebook-square"></i> Share</a>
                     <a href="https://twitter.com/intent/tweet?text={URLEncodedTweetSummary}" class="share-item link-twitter-tweet" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
                     {block:Photo} <a href="https://www.pinterest.com/pin/create/button/?url={URLEncodedPermalink}&amp;media={PhotoURL-HighRes}" class="share-item link-pinterest" target="_blank"><i class="fa fa-pinterest"></i> Pin</a>{/block:Photo}
@@ -6526,8 +6570,8 @@ Unknown
         </div>
         
         <div class="icon-bar-mask">  </div>
-        <a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('{image:LogoMiniBar}') width=55" height="55">
-        <div class="icon-bar2"><a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('{image:LogoMiniBar}') width=55" height="55"><a>
+        <a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('https://i.imgur.com/USEjCuN.png') width=55" height="55">
+        <div class="icon-bar2"><a href="https://www.waveindustries.net" alt="Wave Industries" background-image: url('https://i.imgur.com/USEjCuN.png') width=55" height="55"><a>
             
            
             
