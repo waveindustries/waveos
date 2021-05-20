@@ -3,14 +3,12 @@
     <head>
         <!--            
            
-                	       REAPER OS    
+                               REAPER OS
                              ioxwave.com       
                       waveindustries.net        
                      
         -->      
 
-  
-  
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -7674,7 +7672,7 @@ Your browser does not support inline frames or is currently configured not to di
 
 <div class="WaveMenu2" id="WaveMenu2">
 
-<a href="https://github.com/waveindustries/waveos/releases/tag/1.1">
+<a href="https://github.com/waveindustries/waveos/">
          <img alt="Download" src="https://static.tvtropes.org/pmwiki/pub/images/gray_4.png" 
           style="
     height: 400px;
@@ -7684,45 +7682,14 @@ Your browser does not support inline frames or is currently configured not to di
     margin-left: -30px; margin-top:30px;
 ">REAPER OS</center></a1>
     <div id="download" class="download"><href="https://github.com/waveindustries/waveos/">Download</div></center>
-</div>
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
+</div> 
 
 <div id="fig2" ondrop="dropThis(event)" ondragover="allowDropThis(event)" id="drag1" id="drag2"></div>
 <div id="fig4" ondrop="dropThis(event)" ondragover="allowDropThis(event)" id="drag1" id="drag2"></div>
 
-
-
-    
-    
-
 </div><center></center></div>
     </div>
-    
-   
-    
-    
-    
-    
-    
-   
-         	
-         	
+     	
         {block:Pagination}
         {block:IfInfiniteScrolling}
         <div class="pagination loadmore clearfix">
