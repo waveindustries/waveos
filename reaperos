@@ -7683,7 +7683,7 @@ Your browser does not support inline frames or is currently configured not to di
 <a1><center style="
     margin-left: -30px; margin-top:30px;
 ">REAPER OS</center></a1>
-    <div id="download" class="download"><href="https://github.com/waveindustries/waveos/releases/tag/1.1/">Download</div></center>
+    <div id="download" class="download"><href="https://github.com/waveindustries/waveos/">Download</div></center>
 </div>
 
 
